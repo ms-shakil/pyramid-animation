@@ -1,0 +1,37 @@
+.pyramid{
+    position: relative;
+    height: 600px;
+    clip-path: polygon(50% 0,20% 100%, 80% 100%);
+  }
+  .pyramid div{
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    top: 0;
+    height: 100px;
+    margin: 0 auto;
+    color:  white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    transition: all ease 4s;
+  }
+  .pyramid:hover div{
+    color: white;
+    
+  }
+  .div_1{
+    z-index: 2;
+  }
+  .div_2{
+    z-index: 1;
+  }
+  .pyramid:hover .div_2{
+    top: 110px;
+    background: green;
+  }
+  .pyramid:hover .div_3{
+    top: 220px;
+    background: blue;
+  }
